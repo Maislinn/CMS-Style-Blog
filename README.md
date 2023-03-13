@@ -25,6 +25,8 @@ To use this REPO:
 - UC Berkeley Extension 2023
 - [GitHub](https://docs.github.com/en)
 - [Stackoverflow](https://stackoverflow.com/)
+- [Refrenced Password Hashing with NodeJS](https://www.loginradius.com/blog/engineering/password-hashing-with-nodejs/)
+
 
 
 ## License
