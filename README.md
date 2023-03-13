@@ -4,6 +4,8 @@
 ![license](https://img.shields.io/badge/license-MIT-yellow)
 ## Description
 AS A developer who writes about tech I WANT a CMS-style blog site SO THAT I can publish articles, blog posts, and my thoughts and opinions
+
+In this project I was able to practice my skills in models and routes. 
 ## Table of Contents
  * [Installation](#installation)
  * [Usage](#usage)
@@ -14,9 +16,15 @@ AS A developer who writes about tech I WANT a CMS-style blog site SO THAT I can 
 
 
 ## Installation
-- express
+- express handlebars
 - Sequelize
 - node.js
+- JSON Web Token (https://jwt.io/introduction)
+- MySQL
+- dotenv Package
+- Bcrypt package 
+- express session
+- connect session sequelize
 
 ## Usage
 To use this REPO:
