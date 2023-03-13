@@ -1,0 +1,25 @@
+module.exports ={
+    development: {
+        username: 'root',
+        password: '',
+        database: 'users',
+        host: '127.0.01',
+        dialect: 'mysql',
+},
+
+test: {
+    username: 'your-username',
+    password: 'your-password',
+    database: 'your-database',
+    host: '127.0.0.1',
+    dialect:'mysql'
+},
+
+production: {
+    username: process.env.DB_USERNAME,
+    password: process.env.DB_PASSWORD,
+    database: process.env.DB_NAME,
+    host: process.env.DB_HOST,
+    dialect: 'mysql',
+}
+};
