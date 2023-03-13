@@ -14,7 +14,10 @@ AS A developer who writes about tech I WANT a CMS-style blog site SO THAT I can 
 
 
 ## Installation
-- 
+- express
+- Sequelize
+- node.js
+
 ## Usage
 To use this REPO:
    1. Open the integrated terminal window
