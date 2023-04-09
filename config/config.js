@@ -1,16 +1,14 @@
 module.exports ={
     development: {
         username: 'root',
-        password: '',
+        password: 'rootpassword',
         database: 'users',
         host: '127.0.01',
         dialect: 'mysql',
 },
 
 test: {
-    username: 'your-username',
-    password: 'your-password',
-    database: 'your-database',
+
     host: '127.0.0.1',
     dialect:'mysql'
 },
