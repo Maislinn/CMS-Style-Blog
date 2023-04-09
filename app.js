@@ -62,7 +62,7 @@ app.engine('hbs', exphbs.engine({ extname: '.hbs' }));
 app.set('view engine', 'hbs');
 
 // routes
-app.use('/', require('./routes/index.js'));
+app.use('/index', require('./routes/index.js'));
 app.use('/users', require('./routes/users.js'));
 app.use('/posts', require('./routes/posts.js'));
 app.use('/comments', require('./routes/comments.js'));

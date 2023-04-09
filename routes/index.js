@@ -14,7 +14,7 @@ router.get('/auth/login', async (req, res) => {
 router.get('/auth/register', async (req, res) => {
     await res.render('auth/register')})
 
-router.get('/dashboard', requiresAuth, async (req, res) => {
+router.get('/auth/dashboard/dashboard', requiresAuth, async (req, res) => {
     await res.render('dashboard')})
 
 module.exports = router;
