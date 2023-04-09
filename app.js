@@ -12,7 +12,7 @@ const sequelizeStore = require('connect-session-sequelize')(session.Store);
 //const cors = require('cors');
 const helpers = require('./utils/helpers')
 const app = express();
-const PORT = process.env.PORT || 3000;
+//const PORT = process.env.PORT || 3000;
 
 // using cors to allow cross origin resource sharing
 //app.use(cors());
@@ -79,15 +79,15 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, 'public')));
 
 
-// routes
-// app.use('/index', require('./routes/index.js'));
+// // routes
+// app.use('/', require('./routes/index.js'));
 // app.use('/users', require('./routes/users.js'));
 // app.use('/posts', require('./routes/posts.js'));
 // app.use('/comments', require('./routes/comments.js'));
-app.use(routes);
+// //app.use(routes);
 
-//const port = process.env.PORT || 3000;
+const port = process.env.PORT || 3000;
 
-app.listen(port, () => {
-    console.log(`Server started on port ${port}`);
-})
+// app.listen(port, () => {
+//     console.log(`Server started on port ${port}`);
+// })
