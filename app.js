@@ -58,7 +58,7 @@ app.use((req, res, next) => {
 });
 
 // handlebars
-app.engine('hbs', exphbs.engine({ extname: '.hbs' }));
+app.engine('.hbs', exphbs.engine({ extname: '.hbs', defaultLayout: "main"}));
 app.set('view engine', 'hbs');
 
 // routes
