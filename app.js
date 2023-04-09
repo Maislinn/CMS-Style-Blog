@@ -3,7 +3,7 @@ const session = require('express-session');
 const passport = require('passport');
 const flash = require('connect-flash');
 const path = require('path');
-const exphbs = require('express-handlebars');
+const { engine } = require('express-handlebars');
 const methodOverride = require('method-override');
 const db = require('./config/database');
 const sequelizeStore = require('connect-session-sequelize')(session.Store);
@@ -58,8 +58,10 @@ app.use((req, res, next) => {
 });
 
 // handlebars
+
 app.engine('handlebars', engine({ extname: '.hbs', defaultLayout: "main"}));
-app.set('view engine', 'hbs');
+app.set('view engine', 'handlebars');
+//app.set("views", "./views");
 
 // routes
 app.use('/index', require('./routes/index.js'));
